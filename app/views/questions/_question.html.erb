@@ -1,0 +1,7 @@
+<div>
+  <%= question.title %>
+  <div class="button-container">
+    <%= button_to 'Yes', question_path(question, question: { answer: true }), method: :patch %>
+    <%= button_to 'No', question_path(question, question: { answer: false }), method: :patch %>
+  </div>
+</div>
